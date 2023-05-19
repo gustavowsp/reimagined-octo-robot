@@ -4,21 +4,248 @@
 }
 
 
+/*FORMATAÇÃO DA CAIXA INTRODUTÓRIA DA HOMEPAGE*/
+
+#BoxIntroduct img{
+    height: 500px;
+
+}
+
+#IntroductTitle header h4
+{
+    font-weight: 700;
+    color: #EE3434;
+    margin-bottom: 0px;
+}
+#IntroductTitle header h1
+{
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -10px;
+}
+#IntroductTitle a{
+    text-decoration: none;
+}
+
+#IntroductTitle p{
+    font-weight: 400;
+    opacity: 0.7;
+}
+/*FORMATAÇÃO DA CAIXA INTRODUTÓRIA DA HOMEPAGE*/
+
+
+
+
+
+
 /*FORMATAÇÃO DA CAIXA DE METAS
 ----------------------------------------*/
-    #MetaEnviteContainer /*Caixa */
+    
+    /*Formatando o container e alguns elementos filhos do container de metas*/
+    #MetaEnviteContainer /*Container da caixa de metas*/
     {   
         background-color: #1E1E1E;
+        box-shadow: 0px -5p x 10px 1px black;
         border-radius: 40px 40px 0px 0px;
-        padding: 20px 0px;
+        padding: 25px 0px;
     }
-    #MetaTitleBox /*Título da caixa de metas*/
+    #BallArrow /*Bolinha que fica apontando para baixo no container de metas*/
     {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: rgb(224, 224, 224);
+
+        margin: auto;
+        position: relative;
+        top: -60px;
+
+        animation: desca 1s infinite alternate;
+        transition: 1s;
+    }
+    #BallArrow i{
+        font-size: 2.5em;
+        color: #191919;
+    }
+    #BallArrow:hover{
+        background-color: #191919;
+        transition: 1s;
+    }
+    #BallArrow:hover i{
+        color: whitesmoke;
+        transition: 0.5s;
+    }
+
+    @keyframes desca {
+        from{
+            transform: translateY(-5px);
+        }
+        to{
+            transform: translateY(5px);
+        }
+    }
+
+    #CaixaMetas header /*Caixa com o título e informações das metas*/
+    {
+
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+    #CaixaMetas header h2{ /*Título das metas*/
+        margin-bottom: 15px;
+        font-weight: 700;
+
+    }
+    #CaixaMetas header p{ /*paragrafo das metas*/
+        opacity: 0.6;
+        letter-spacing: 0.4px;
         margin-bottom: 30px;
     }
-    #MetaTitleBox p /*Texto explicativo da caixa de metas*/
-    {
-        width: 80%;
-        margin: 10px auto;
+
+    #Metas{        
+        width: 100%;
+        
+        display: flex;
+        justify-content: space-between;
     }
- 
+    #Metas section
+    {
+        padding: 15px 0px;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    /*Formatando o container e alguns elementos filhos do container de metas*/
+
+
+    /*Formatação da meta em si*/
+    .meta-item
+    {
+        width: 85%;
+        margin: auto;
+        background-color: #191919;
+        padding: 20px 10px;
+
+        margin-bottom: 0%;
+        height: 350px;
+        transition: 1s;
+
+    }
+    .meta-item img{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .meta-item.yellow{
+        border-bottom:2px solid yellow ;
+    }
+    .meta-item.blue{
+        border-bottom:2px solid #023059 ;
+    }
+    .meta-item.red{
+        border-bottom:2px solid #EE3434 ;
+    }
+    .meta-item h3{
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .meta-item a{
+        display: inline-block;
+        
+    }
+    .meta-item p{
+        opacity: 0.6;
+        font-size: 0.8em;
+        letter-spacing: 0.4px;
+
+        width: 80%;
+        margin: auto;
+
+        margin-bottom: 30px;
+    }
+        /*Animações*/
+        .meta-item:hover
+        {
+            transition: 0.5s;
+            /*margin-bottom: 20%;*/
+            height: 380px;
+            box-shadow: 10px 10px 6px rgba(0, 0, 0, .6);
+        }
+        /*Animações*/
+
+    /*Formatação da meta em si*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+/*X-Small devices*/
+@media (max-width:575.98px)
+{}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px)
+{ 
+    
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width:991.98px)
+{
+    .meta-item h3{
+        font-size: 1.2em;
+    }
+    
+    .meta-item p
+    {
+        width: 100%;
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width:1199.98px)
+{ 
+    
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width:1399.98px)
+{ 
+    
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px)
+{ 
+    
+}

@@ -60,14 +60,14 @@
         </nav>
         
         <!-- Caixa de introdução -->
-        <article class="row">
+        <article class="row" id="BoxIntroduct">
             
 
 
-            <!-- Introdução texto-->
+            <!-- Introdução texto -->
             <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
             
-                <section>
+                <section id="IntroductTitle">
                     <header>
                         <h4>Bem vindo ao seu</h4>
                         <h1>Importador de metas</h1>
@@ -76,15 +76,16 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur neque harum tempore rem provident quisquam inventore reiciendis voluptatem dolorem, accusantium laborum quasi maxime, accusamus illo nobis itaque ullam fuga!
                     </p>
+                    <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="botão-vermelho">Como enviar metas</a>
                 </section>
 
             </div>
-            <!-- Introdução texto-->
+             <!--Introdução texto-->
 
 
             <!-- Imagem introdutória-->
-            <div class="col-md-6 d-none d-md-flex justify-content-center">
-                <img src="/Static/img/Advogado.png" alt="">
+            <div class="col-md-6 d-none d-md-flex justify-content-center ">
+                <img src="/Static/img/advogado.png" alt="">
             </div>
             <!-- Imagem introdutória-->
 
@@ -98,13 +99,24 @@
         
     
     <div class="container-fluid" id="MetaEnviteContainer">
+
+        <!--Bolinha que aponta para baixo-->
+        
+        <div id="BallArrow" class="d-flex justify-content-center align-items-center">
+            <i class="fa-sharp fa-solid fa-arrow-down"></i>
+        </div>
+        <!--Bolinha que aponta para baixo-->
+
+
+        <!--Conteúdo das metas-->
         <div class="container">
 
             <!-- Caixa de metas -->
-            <article class="row m-2 text-center">
+            <article class="row m-2 text-center" id="CaixaMetas">
 
-                <header class="row text-center" id="MetaTitleBox">
-                    <h2 class="m-auto">Escolha a meta que deseja enviar</h2>
+                <!-- Cabeçalho -->
+                <header>
+                    <h2>Escolha a meta que deseja enviar</h2>
 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -113,23 +125,57 @@
                     </p>
 
                 </header>
+                <!-- Cabeçalho -->
                 
                 <!-- Metas -->
-                <div class="row justify-content-around w-100">
-                    <section class="col-md-4 col-12">
-                        <h3>Deflatores</h3>
-                        <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="btn btn-warning ">Enviar Meta</a>
-                    </section>
+                <div class="row" id="Metas">
 
+                    <!-- Meta -->
                     <section class="col-md-4 col-12">
-                        <h3>Incremento Meta</h3>
-                        <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="btn btn-primary">Enviar Meta</a>
-                    </section>
+                        <div class="meta-item yellow">
 
-                    <section class="col-md-4 col-12">
-                        <h3>Meta 3</h3>
-                        <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="btn btn-danger">Valor Prêmio</a>
+                            <div class="content">
+                                <img src="/Static/img/Deflatores.png" alt="">
+                                <h3>Deflatores</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, 
+                                    delectus? Officiis, ducimus ullam? Ducimus.
+                                </p>
+                                <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="btn btn-warning ">Enviar Meta</a>
+                            </div>
+                        </div>
                     </section>
+                    <!-- Meta -->
+
+                    <!-- Meta -->
+                    <section class="col-md-4 col-12">
+                        <div class="meta-item blue">
+                            <img src="/Static/img/Incrementometa.png" alt="">
+                            <h3>Incremento Meta</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, 
+                                delectus? Officiis, ducimus ullam? Ducimus.
+                            </p>
+                            <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="btn btn-primary">Enviar Meta</a>
+                        </div>
+                    </section>
+                    <!-- Meta -->
+
+                    <!-- Meta -->
+                    <section class="col-md-4 col-12">
+                        <div class="meta-item red">
+                            <img src="/Static/img/valorpremio.png" alt="">
+
+                            <h3>Meta 3</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, 
+                                delectus? Officiis, ducimus ullam? Ducimus.
+                            </p>
+                            <a href="/FrontEnd/MetaEnvite/MetaEnvite.html" class="btn btn-danger">Valor Prêmio</a>
+                        </div>
+                    </section>
+                    <!-- Meta -->
+
                 </div>
                 <!-- Metas -->
 
@@ -137,6 +183,8 @@
             <!-- Caixa de metas -->
 
         </div>
+        <!--Conteúdo das metas-->
+
     </div>
     <!--Caixa De Metas-->
 
