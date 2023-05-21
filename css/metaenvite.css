@@ -151,3 +151,35 @@ html,body{
  { 
     
 }
+
+
+
+@media  (max-width: 767.98px)
+{ 
+
+    #IntroductMeta{
+        text-align: center;
+    }
+    #IntroductMeta h1{
+        font-size: 2em;
+    }
+    #IntroductMeta p{
+        font-size: 0.9em;
+    }
+    .formexcel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .file-upload
+    {
+        width: 180px;
+        font-size: 0.68em;
+    }
+    .IconInput{
+        font-size: 0.9em;
+    }
+   
+}

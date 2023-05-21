@@ -46,3 +46,18 @@ fontes e etcs...*/
 
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
 }
+
+
+@media  (max-width: 767.98px)
+{ 
+  nav .navbar-brand{
+    font-size: 0.8em;
+  }
+  nav .navbar-toggler-icon{
+    font-size: 0.7em;
+  }
+  ul .nav-item
+  {
+    font-size: 0.7em;
+  }
+}
